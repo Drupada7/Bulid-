@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.month {
+  padding: 10px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px 10px 0 0;
+}
+
+.month .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.month .header i {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekdays div {
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  background-color: #4ac1f0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.weekdays .weekend {
+  color: #140901; /* Change color for weekends */
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+}
+
+.days div {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.days div.today {
+  background-color: #4ac1f0; /* Change color for today's date */
+
+.days div:hover:not(.empty) {
+  background-color: #dddddd; /* Change color on hover */
+}
